@@ -9,3 +9,15 @@ Após a coleta dos dados, será realizado tratamento dos mesmos, deixando-os pro
 - Quais interferem mais.
 
 Após ter a resposta acima, pretendo treinar um modelo, para analizar o comportamento do preço do aluguel ao alterar as features do objeto.
+
+
+
+# Webscrapping
+Ao procurar por imóveis para alugar na cidade de São Paulo, foram encontrados cerca de 10.000 resultados. Os anúncios vão aparecendo conforme o scroll-down na página é feita. Para colher os links, será realizado o scroll-down até o fim, para então colher, através de informações HTML, o link de cada um.
+
+O caminho do path para a URL de cada anúncio está apresentado abaixo:
+
+//*[@id="app"]/div/main/section[2]/div[2]/div/div[1]/div[3]/div/div/a
+
+
+/html/body/div[1]/div/main/section[2]/div[2]/div/div[1]/div[3]/div/div/a
