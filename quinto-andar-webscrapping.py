@@ -1,3 +1,4 @@
+import re
 import time
 import requests
 import pandas as pd
@@ -11,7 +12,7 @@ url = 'https://www.quintoandar.com.br/alugar/imovel/sao-paulo-sp-brasil/'
 
 option = Options()
 option.headless = True # Se for True, não é possível visualizar com interface gráfica
-driver = webdriver.Firefox(executable_path=r'geckodriver\geckodriver.exe') #options=option?
+driver = webdriver.Firefox(executable_path='geckodriver\geckodriver.exe') #options=option?
 
 # Abre a URL
 driver.get(url)
@@ -27,7 +28,9 @@ driver.get(url)
 time.sleep(5)
 elems = driver.find_elements_by_xpath("//a[@href]")
 for elem in elems:
-    print(elem.get_attribute("href"))
+    link_geral = str(elem.get_attribute("href"))
+    if ('imovel/8') in link_geral:
+        print(link_geral)
 
 
 # Parseando conteúdo HTML
