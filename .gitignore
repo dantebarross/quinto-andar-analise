@@ -6,3 +6,5 @@
 geckodriver.log
 geckodriver/geckodriver.exe
 .idea/inspectionProfiles/profiles_settings.xml
+.idea/csv-plugin.xml
+.idea/.name
