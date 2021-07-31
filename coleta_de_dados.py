@@ -2,10 +2,9 @@ import re
 import time
 import requests
 import pandas as pd
-from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
-import json
+
 
 
 # URL do anúncio
@@ -13,7 +12,7 @@ url = 'https://www.quintoandar.com.br/imovel/893382549?house_tags=newAd&search_r
 
 option = Options()
 option.headless = True # Se for True, não é possível visualizar com interface gráfica
-driver = webdriver.Firefox(executable_path='geckodriver\geckodriver.exe') #options=option?
+driver = webdriver.Firefox(executable_path='geckodriver\geckodriver.exe', options=option) #options=option?
 
 # Abre a URL
 driver.get(url)
@@ -22,12 +21,20 @@ driver.get(url)
 rua_bairro = driver.find_element_by_class_name("sc-bdVaJa.hOdqiw").text #sc-bdVaJa hOdqiw
 print('a rua e bairro são: ' + str(rua_bairro))
 
+
+bairro_do_imovel = driver.find_elements_by_class_name("w0f64d-0.hBSKKA")
+print('o bairro é: ' + bairro_do_imovel[1].text)
+
+
+
 preços = driver.find_elements_by_class_name("sc-1mwqqtp-0.byvuTN")#.text
 
 x = 0
 while x < len(preços):
     print('os preços são: ' + preços[x].text)
     x += 1
+
+
 
 
 
