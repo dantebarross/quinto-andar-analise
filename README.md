@@ -1,5 +1,4 @@
-![logo quinto andar](https://upload.wikimedia.org/wikipedia/commons/5/56/QuintoAndar-Logo-Blue-hor.png)
-img[alt=logo quinto andar] { width: 200px; }
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/56/QuintoAndar-Logo-Blue-hor.png" alt="quinto andar" width="200"/>
 
 # Análise de dados da plataforma QuintoAndar
 No presente projeto, realizei o webscrapping para coletar dados da plataforma Quinto Andar, correspondentes a anúncios de imóveis para alugar na cidade de São Paulo.
