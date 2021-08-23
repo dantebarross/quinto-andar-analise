@@ -4,11 +4,11 @@
 
 No presente projeto:
 - Realizei o webscrapping para coletar dados da plataforma Quinto Andar, correspondentes a anúncios de imóveis para alugar na cidade de São Paulo;
-  - Os dados (features) colhidos foram: URL do anúncio, valores (aluguel, condomínio, iptu, seguro incêndio, taxa de serviço e valor total), metragem (m²), número de quartos, banheiros, vagas de carro, andar, se aceita pet, se há mobília, e se é próximo ao metrô;
+  - Os dados (features) colhidos foram: URL do anúncio, valores (aluguel, condomínio, iptu, seguro incêndio, taxa de serviço e valor total), metragem (m²), número de quartos, banheiros, vagas de carro, andar, se aceita pet, se há mobília, e se é próximo ao metrô.
 - Foram colhidos os dados de 2.778 anúncios da cidade de São Paulo;
-- Foi realizado o tratamento dos mesmos dados, deixando-os prontos para a análise estatística descritivas. 
+- Foi realizado o tratamento dos mesmos dados, deixando-os prontos para as análises estatística descritivas. 
 
-Algumas perguntas que pretendo responder na etapa analítica:
+Algumas perguntas que venho respondendo na etapa analítica:
 - Qual o comportamento dos dados do QuintoAndar para uma cidade metropolitana tal qual São Paulo;
 - O quanto cada uma das features interfere no preço do aluguel;
 - Quais interferem mais.
