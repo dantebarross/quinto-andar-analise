@@ -1,3 +1,5 @@
+![logo quinto andar](https://upload.wikimedia.org/wikipedia/commons/5/56/QuintoAndar-Logo-Blue-hor.png)
+
 # Análise de dados da plataforma QuintoAndar
 No presente projeto, realizei o webscrapping para coletar dados da plataforma Quinto Andar, correspondentes a anúncios de imóveis para alugar na cidade de São Paulo.
 Os dados colhidos foram: URL do anúncio, valores (aluguel, condomínio, iptu, seguro incêndio, taxa de serviço e valor total), metragem (m²), número de quartos, banheiros, vagas de carro, andar, se aceita pet, se há mobília, e se é próximo ao metrô.
