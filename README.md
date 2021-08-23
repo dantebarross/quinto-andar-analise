@@ -1,6 +1,6 @@
 # Análise de dados da plataforma QuintoAndar
 
-<img src="logo_quinto_andar.png" alt="quinto andar" width="500"/>
+<img src="logo_quinto_andar.png" alt="quinto andar" width="800"/>
 
 No presente projeto:
 - Realizei o webscrapping para coletar dados da plataforma Quinto Andar, correspondentes a anúncios de imóveis para alugar na cidade de São Paulo;
