@@ -18,23 +18,31 @@ df = get_data(path)
 # vamos remover a coluna de urls, pois é irrelevante para a análise
 df = df.drop(['url'], axis=1)
 st.title('QuintoAndar: Análise de dados')
+
+st.image('logo_quinto_andar.png')
+
 st.header('Dataset colhido em anúncios da cidade de São Paulo')
 st.write(df)
 st.header('Análise descritiva de cada feature')
 st.write(df.describe())
 
-
-# Filtrar análise por bairro
-df_2 = df #salvando o original
-df = df.loc[df['bairro'] == 'Higienópolis']
-
 # O seguinte groupby agrupa as colunas 'bairro' e 'total', calculando a média e colocando em ordem ascendente através da coluna 'total'.
+df_2 = df #salvando o original
 df_bairro = df_2[['bairro', 'total']].groupby(['bairro']).mean().sort_values('total').reset_index()
 
 # Vamos plotar um gráfico de barras que relaciona os bairro e a média do valor total de cada um deles
 st.header('Média do valor de aluguel do imóvel (R$) por bairro')
 fig = px.histogram(df_bairro, x='bairro', y='total', nbins=19)
 st.plotly_chart(fig, use_container_width=True)
+
+# Filtrar análise por bairro
+
+bairros = df['bairro'].unique()
+bairros_selecionados = st.multiselect('Selecione os bairros para análise', bairros)
+mask_bairros = df['bairro'].isin(bairros_selecionados)
+df = df[mask_bairros]
+
+
 
 # Vamos plotar gráficos que dizem a distribuição de algumas features importantes
 df_quarto = df.groupby('quarto')['total'].agg(np.median).reset_index() # coluna quarto e seus preços totais correspondentes
@@ -69,7 +77,6 @@ c3.plotly_chart(fig, use_container_width=True)
 c4.header('Média do aluguel por número de banheiros')
 fig = px.histogram(df_banheiro, x='banheiro', y='total', nbins=19)
 c4.plotly_chart(fig, use_container_width=True)
-
 
 # https://www.youtube.com/watch?v=4gWs26AfFhQ&list=PLZlkyCIi8bMprZgBsFopRQMG_Kj1IA1WG&index=7&ab_channel=SejaUmDataScientist
 # 1:09:20
