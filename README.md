@@ -8,6 +8,7 @@ Acesse aqui: https://analise-quinto-andar.herokuapp.com/
   - Os dados (features) colhidos foram: URL do anúncio, valores (aluguel, condomínio, iptu, seguro incêndio, taxa de serviço e valor total), metragem (m²), número de quartos, banheiros, vagas de carro, andar, se aceita pet, se há mobília, e se é próximo ao metrô.
 - Foram colhidos os dados de 2.778 anúncios da cidade de São Paulo;
 - Foi realizado o tratamento dos mesmos dados, deixando-os prontos para as análises estatística descritivas;
+- A análise do _dataset_ tratado pode ser consultada clicando no arquivo **4_analise_exploratoria.ipynb**;
 - Desenvolvi um website com gráficos interativos (utilizando o Streamlit), para que os dados sejam interpretados em sua totalidade e, também, especificando os bairros desejados;
 - Realizei deploy para nuvem (utilizando o Heroku), podendo ser acessado de qualquer dispositivo conectado à internet: https://analise-quinto-andar.herokuapp.com/
 
