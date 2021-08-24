@@ -13,7 +13,7 @@ Acesse aqui: https://analise-quinto-andar.herokuapp.com/
 
 ## Algumas perguntas que pude responder na etapa analítica:
 - Qual o comportamento dos dados do QuintoAndar para uma cidade metropolitana tal qual São Paulo;
-  - A plataforma possui viés, pois a maior parte de seus imóveis estão localizados em bairros nobres
+  - A plataforma possui viés, pois a maior parte de seus imóveis estão localizados em bairros nobres.
 - As features que mais interferem no valor final do aluguel são: bairro, número de banheiros, de quartos e a metragem (m²);
   - As três últimas features possuem coeficiente de correlação de Pearson de 0,7 (forte), influenciando diretamente o valor do imóvel;
   - A feature "bairro", porém, é a que decide maiormente qual será o preço final.
@@ -24,8 +24,8 @@ Acesse aqui: https://analise-quinto-andar.herokuapp.com/
 ## O que fiz na fase analítica e ainda posso disponibilizar no deploy:
 - Agrupar dados por bairro (pois bairros diferentes possuem valores/comportamentos diversos);
 - Será encontrada a mediana de cada agrupamento;
-- Os anúncios que tiverem um valor menor do que a mediana serão interpretados como lucrativos. 
-- O valor será obtido dividindo o preço total do aluguel pelo número da metragem (em m²). Ou seja, será considerado o valor por m².
+- Os anúncios que tiverem um valor menor do que a mediana serão interpretados como lucrativos;
+- O valor será obtido dividindo o preço total do aluguel pelo número da metragem (em m²). Ou seja, será considerado o valor por m²;
 - O valor de lucro do imóvel será obtido através da diferença entre o valor da mediana no bairro e o valor do imóvel.
 
 ## O que ainda não fiz:
